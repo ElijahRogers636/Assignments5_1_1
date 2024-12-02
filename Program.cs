@@ -32,6 +32,7 @@
                 temp = temp / 10; // remove the digit on the end on the integer
             }
 
+            Console.WriteLine($"Reversed Integer: { reversedNum }");
             // Return if reversed number is equal to the original number
             return reversedNum == num;
         }
