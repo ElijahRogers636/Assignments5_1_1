@@ -11,6 +11,7 @@
             PrintPrompt(-121); //False
             PrintPrompt(040); //False
             PrintPrompt(0); //True
+            PrintPrompt(1865); //False
             
         }
 
