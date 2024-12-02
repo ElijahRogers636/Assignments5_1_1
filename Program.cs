@@ -9,6 +9,7 @@
             PrintPrompt(140); //False
             PrintPrompt(30511503); //True
             PrintPrompt(-121); //False
+            PrintPrompt(040); //False
             
         }
 
@@ -17,7 +18,10 @@
         {
             int temp = num;
             int reversedNum = 0;
-            if (num < 0) return false;
+
+            if (num == 0) return true; // If num is 0 it is a plaindrome
+            if (num < 0 || num % 10 == 0) return false; // Check for negatives with (num < 0) or check if num % 10 == 0 (if last digit is 0 return false, ints dont lead with 0); 
+
             // Reverse int until temp is 0
             while (temp != 0)
             {
