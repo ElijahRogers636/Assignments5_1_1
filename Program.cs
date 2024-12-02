@@ -11,6 +11,7 @@
             PrintPrompt(-121); //False
             PrintPrompt(040); //False
             PrintPrompt(0); //True
+            PrintPrompt(9); //True
             PrintPrompt(1865); //False
             
         }
@@ -27,7 +28,7 @@
             // Reverse int until temp is 0
             while (temp != 0)
             {
-                // Multiply the "reverse" number by 10 (to set up the reversed num to add the next digit) and add the remainder of temp (next digit taken from the end of temp)
+                // Multiply the "reverse" number by 10 (adds a zero to reversed number) and add the remainder of temp (next digit taken from the end of temp)
                 reversedNum = (reversedNum * 10) + temp % 10; 
                 temp = temp / 10; // remove the digit on the end on the integer
             }
